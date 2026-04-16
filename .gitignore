@@ -1,0 +1,10 @@
+build/
+install/
+log/
+.vscode/
+*.pyc
+__pycache__/
+
+src/turtlebot4/
+src/turtlebot4_desktop/
+src/turtlebot4_simulator/
