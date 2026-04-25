@@ -163,3 +163,25 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 - Most errors come from setup issues  
 
 update check
+999
+---
+
+## Setup Instructions
+
+Clone the repository:
+
+```bash
+git clone https://github.com/bluetuka/turtlebot4-ros2-jazzy-guide.git
+cd turtlebot4-ros2-jazzy-guide
+cd src
+
+git clone https://github.com/turtlebot/turtlebot4.git
+git clone https://github.com/turtlebot/turtlebot4_desktop.git
+git clone https://github.com/turtlebot/turtlebot4_simulator.git
+
+cd ..
+source /opt/ros/jazzy/setup.bash
+rosdep install --from-paths src -yi
+colcon build
+source install/setup.bash
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py
