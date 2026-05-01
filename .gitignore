@@ -1,0 +1,30 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# VS Code local settings
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# CMake / colcon temporary files
+*.log
+*.swp
+*.swo
+
+# Large database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+*Zone.Identifier*
+
+# Local backup / experimental worlds
+src/turtlebot4_simulator/turtlebot4_gz_bringup/worlds/dc_t4_backup.sdf
+src/turtlebot4_simulator/turtlebot4_gz_bringup/worlds/maze_class7_.sdf
