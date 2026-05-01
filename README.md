@@ -1,8 +1,7 @@
-# TurtleBot4 Simulation Guide
+# TurtleBot4 Simulation Guide (ROS2 + Gazebo)
 
 Autonomous Mobile Robots Course  
 Teaching Assistant: Mohammad
-# TurtleBot4 Simulation Guide (ROS2 + Gazebo)
 
 This guide explains how to run the TurtleBot4 simulation used in the
 Autonomous Mobile Robots course.
@@ -75,6 +74,17 @@ Step 4 — build workspace
 
 colcon build
 
+---
+## Quick Start 
+robot turtlebot
+
+ros2 launch/turtlebot4_gz_bringup turtlebot4_gz.launch.py
+
+Terminal 2:
+
+robot turtlebot
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ---
 
 ## Activate the Environment
